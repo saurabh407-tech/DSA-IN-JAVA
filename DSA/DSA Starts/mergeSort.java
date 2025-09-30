@@ -46,3 +46,58 @@ public class mergeSort{
         System.out.println();
     }
 }
+
+
+//Same program just done for the revision purpose..
+
+// import java.util.*;
+// public class mergeSort{
+//     public static void conquer(int arr[],int si,int mid,int ei){
+//         int merge[]=new int[ei-si+1];
+//         int idx1=si;
+//         int idx2=mid+1;
+//         int x=0;
+//         while(idx1<=mid && idx2<=ei){
+//             if(arr[idx1]<arr[idx2]){
+//                merge[x++]=arr[idx1++];
+//             }
+//             else{
+//                 merge[x++]=arr[idx2++];
+//             }
+//         }
+//         while(idx1<=mid){
+//             merge[x++]=arr[idx1++];
+//         }
+//         while(idx2<=ei){
+//             merge[x++]=arr[idx2++]; 
+//         }
+//         for(int i=0,j=si; i<merge.length; i++, j++){
+//             arr[j]=merge[i];
+//         }
+//     }
+//         public static void divide(int arr[],int si,int ei){
+//             int mid=(si+ei)/2;
+//             if(si>=ei){
+//                 return;
+//             }
+//             divide(arr,si,mid);
+//             divide(arr,mid+1,ei);
+//             conquer(arr,si,mid,ei);
+//         }
+//         public static void main(String[] args){
+//             Scanner sc=new Scanner(System.in);
+//              System.out.println("Enter the size of the array:");
+//             int size=sc.nextInt();
+//             int arr[]=new int[size];
+//             System.out.println("Enter the elements of the array: ");
+//             for(int i=0; i<size; i++){
+//                 arr[i]=sc.nextInt();
+//             }
+//             divide(arr,0,size-1);
+//             for(int i=0; i<size; i++){
+//                 System.out.print(arr[i]+" ");
+//             }
+//             System.out.println("These elements are in the Sorted order");
+    
+//     }
+// }
